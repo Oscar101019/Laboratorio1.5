@@ -6,15 +6,47 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/idDato"
-        android:layout_width="367dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/idCarrera"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idDato" />
+
+    <TextView
+        android:id="@+id/idDato5"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
         android:text="TextView"
         android:textAlignment="viewStart"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idDato" />
+
+    <TextView
+        android:id="@+id/idDato"
+        android:layout_width="262dp"
+        android:layout_height="50dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/imagen"
+        android:layout_width="124dp"
+        android:layout_height="130dp"
+        android:background="@android:drawable/sym_def_app_icon"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
 </android.support.constraint.ConstraintLayout>

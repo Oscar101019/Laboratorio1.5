@@ -48,10 +48,10 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add("MONROY SALCEDO JOSE DE JESUS	");
         arrayList.add("PARRA DOMINGUEZ DYLAN SALVADOR	");
         arrayList.add("PEREZ ARAIZA FLOR MARIELA	");
-        arrayList.add("PUGA FLORES CARLOS	");
-        arrayList.add("REYES GUERRERO GUILLERMO GUADALUPE	");
-        arrayList.add("RODRIGUEZ ADAME OLIVER GIOVANNY	");
-        arrayList.add("SANCHEZ CARRILLO BETSY DEL CARMEN	");
+        arrayList.add("PUGA FLORES CARLOS");
+        arrayList.add("REYES GUERRERO GUILLERMO GUADALUPE");
+        arrayList.add("RODRIGUEZ ADAME OLIVER GIOVANNY");
+        arrayList.add("SANCHEZ CARRILLO BETSY DEL CARMEN");
         arrayList.add("SILVA CAMACHO EDUARDO LUIS	");
         arrayList.add("TORRES CUETO JESUS MANUEL	");
         arrayList.add("VALDEZ CORREA CARLOS GERMAN	");

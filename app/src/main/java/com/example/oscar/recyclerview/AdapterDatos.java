@@ -16,6 +16,7 @@ public class AdapterDatos extends RecyclerView.Adapter<AdapterDatos.ViewHolderDa
 
     ArrayList<String> listDatos;
 
+
     public AdapterDatos(ArrayList<String> listDatos) {
         this.listDatos = listDatos;
     }
