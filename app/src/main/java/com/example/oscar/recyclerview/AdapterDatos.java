@@ -14,11 +14,15 @@ import java.util.ArrayList;
 
 public class AdapterDatos extends RecyclerView.Adapter<AdapterDatos.ViewHolderDatos> {
 
-    ArrayList<String> listDatos;
+    ArrayList<String> listNombres;
+    ArrayList<String> listNum;
+    ArrayList<String> listCarrera;
 
 
-    public AdapterDatos(ArrayList<String> listDatos) {
-        this.listDatos = listDatos;
+    public AdapterDatos(ArrayList<String> listNombres,ArrayList<String> listNum,ArrayList<String> listCarrera) {
+        this.listNum = listNum;
+        this.listNombres = listNombres;
+        this.listCarrera = listCarrera;
     }
 
     @Override
@@ -30,28 +34,43 @@ public class AdapterDatos extends RecyclerView.Adapter<AdapterDatos.ViewHolderDa
 
     @Override
     public void onBindViewHolder(ViewHolderDatos holder, int position) {
-        holder.asignarDatos(listDatos.get(position));
+        holder.asignarNombres(listNombres.get(position));
+        holder.asignarNumeros(listNum.get(position));
+        holder.asignarCarrera(listCarrera.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return listDatos.size();
+        return listNombres.size() + listCarrera.size() + listNum.size();
     }
 
     public class ViewHolderDatos extends RecyclerView.ViewHolder {
 
-        TextView dato;
+        TextView Nombres;
+        TextView Num;
+        TextView Carr;
 
         public ViewHolderDatos(View itemView) {
             super(itemView);
-            dato=(TextView) itemView.findViewById(R.id.idDato);
+            Nombres=(TextView) itemView.findViewById(R.id.idNombre);
+            Num=(TextView) itemView.findViewById(R.id.idNumero);
+            Carr=(TextView) itemView.findViewById(R.id.idCarrera);
 
 
         }
 
-        public void asignarDatos(String datos) {
-            dato.setText(datos);
+        public void asignarNombres(String nombres) {
+            Nombres.setText(nombres);
         }
+
+        public void asignarNumeros(String numeros){
+            Num.setText(numeros);
+        }
+
+        public void asignarCarrera(String carrera){
+            Carr.setText(carrera);
+        }
+
     }
 }
 

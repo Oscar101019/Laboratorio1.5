@@ -1,52 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/idCarrera"
-        android:layout_width="262dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="40dp"
-        android:textAlignment="viewStart"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idDato" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/idDato5"
-        android:layout_width="262dp"
-        android:layout_height="40dp"
-        android:text="TextView"
-        android:textAlignment="viewStart"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idDato" />
+        <ImageView
+            android:id="@+id/idImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/ic_launcher_round" />
 
-    <TextView
-        android:id="@+id/idDato"
-        android:layout_width="262dp"
-        android:layout_height="50dp"
-        android:text="TextView"
-        android:textAlignment="viewStart"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/imagen"
-        android:layout_width="124dp"
-        android:layout_height="130dp"
-        android:background="@android:drawable/sym_def_app_icon"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+            <TextView
+                android:id="@+id/idNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Nombre"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-</android.support.constraint.ConstraintLayout>
+            <TextView
+                android:id="@+id/idCarrera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Carrera " />
+
+            <TextView
+                android:id="@+id/idNumero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Nc " />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
